@@ -1,0 +1,378 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif; 
+    box-sizing: border-box;
+    line-height: 1.6;
+    margin: 0;
+    color: #464646;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    margin: 0 auto;    
+    padding: 1rem 1rem;
+    background-color: var(--color-de-fondo);
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.cabecera__izquierda {
+    display: flex;
+    align-items: center;
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    height: auto;
+}
+
+.cabecera__titulo {
+    font-size: 1rem; 
+    padding: 0px 15px;   
+}
+
+.navegacion__lista {
+    gap: 20px; /* Espaciado entre los elementos del menú */
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion__elemento:nth-child(1),
+.navegacion__elemento:nth-child(2),
+.navegacion__elemento:nth-child(3),
+.navegacion__elemento:nth-child(4),
+.navegacion__elemento:nth-child(5)
+{
+    display:none;
+}
+
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+.presentacion{
+    padding: 1.5rem 1.5rem;
+    justify-content: center;
+
+}
+
+.presentacion__titulo{
+    margin: 0px;
+}
+
+.presentacion__foto{
+    width: 118px;
+    height: 118px;
+}
+
+
+.redes{
+    padding: 0%;
+    display: flex;
+    gap: 3%;
+}
+
+.redes__img{
+    flex-direction: row;
+}
+  
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi{
+    padding: 0.5rem 1.5rem;
+    background-color: #EAF2FD;        
+}
+
+.sobre-mi__firma{
+    display: none;
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades__titulo{
+    text-align: center;
+}
+
+.habilidades__lista{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.habilidades__elemento{
+    background-color: white;
+    box-sizing: border-box;
+    width: 156px;
+    height: 118px;
+    padding-left: 15px;
+    padding-top: 40px;    
+}
+
+.habilidades__nombre{
+    margin: 0px;
+
+}
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+.aficiones__titulo{
+    text-align: center;
+}
+
+.aficiones__lista{
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.aficiones__elemento{
+    background-color: white;
+    box-sizing: border-box;
+    width: 156px;
+    height: 118px;
+    padding-left: 15px;
+    padding-top: 40px;    
+}
+
+.aficiones__nombre{
+    margin: 0px;
+
+}
+
+/*------------------------------ Sección de Formación Academica --------------------------------*/
+
+.formacion{
+    background-color: #EAF2FD; 
+    padding-bottom: 60px;
+    } 
+
+.formacion__titulo{
+    text-align: center;
+    padding-top: 30px;    
+}
+
+.formacion__lista{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacion__elemento{
+    background-color: white;
+    box-sizing: border-box;
+    width: 296px;
+    height: 118px;   
+    margin: 35px 5px
+}
+
+.formacion__icono{
+    padding: 30px;
+    display: block;
+    align-items: center;
+    width: auto;
+    height: 58px;
+    margin: 0 auto;
+}
+
+.formacion__nombre{
+    margin: 0%;
+}
+
+.formacion__detalle{
+    margin: 0%;
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+
+.proyectos{
+    padding: 0.5rem 1.5rem;
+}
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+.contacto{
+    background-color: #EAF2FD;
+    padding: 1rem 2.5rem;
+}
+
+.contacto__formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*------------------------------ Footer ---------------------------------*/
+
+span{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.contacto__campo{
+    height:56px ;
+    border: none;
+}
+
+.contacto__campo--textarea{
+    height: 133px;
+}
+
+
+.contacto__boton{
+    width: 133px;
+    height: 40px;
+    background-color: #2A7AE4;
+    border: none;
+    color: #EAF2FD;
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .navegacion__lista {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+    .navegacion__elemento:nth-child(1),
+    .navegacion__elemento:nth-child(2),
+    .navegacion__elemento:nth-child(3),
+    .navegacion__elemento:nth-child(4),
+    .navegacion__elemento:nth-child(5)
+    {
+        display:none;
+    }
+  
+
+    .presentacion{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }  
+
+    .habilidades__elemento{       
+        width: 224px;
+        height: 118px;
+    }
+
+    .aficiones__elemento{    
+        width: 224px;
+        height: 118px; 
+    }
+
+    .presentacion__foto{
+        width: 146px;
+        height: 146px;
+    }
+
+    .formacion__elemento{
+        width: 224px;
+        height: 118px;   
+    }
+
+    .formacion__lista{    
+        gap: 5px;
+    }
+}
+     
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .navegacion{
+        margin-left: 0px;
+    }
+    .navegacion__lista{
+         display: flex;
+    }
+
+    .navegacion__elemento:nth-child(1),
+    .navegacion__elemento:nth-child(2),
+    .navegacion__elemento:nth-child(3),
+    .navegacion__elemento:nth-child(4),
+    .navegacion__elemento:nth-child(5)
+    {
+        display:flex;
+    }
+  
+    .habilidades__elemento{        
+        width: 176px;
+        height: 174px; 
+    }
+
+    .aficiones__elemento{  
+        width: 176px;
+        height: 174px; 
+    }
+
+    .formacion__elemento{
+        width: 368px;
+        height: 286px;   
+    }
+
+    .formacion__icono{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: block;
+        align-items: center;
+        width: auto;
+        height: 130px;
+        margin: 0 auto;
+    }
+
+    .presentacion__contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .presentacion__foto{
+        width: 368px;
+        height: 368px;
+    }
+
+    .formacion__lista{    
+        gap: 5px;
+    }
+  
+}
